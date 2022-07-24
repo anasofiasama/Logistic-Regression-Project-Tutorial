@@ -1,3 +1,14 @@
+# Importacion de librerias
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split, GridSearchCV, cross_val_score, RepeatedStratifiedKFold, StratifiedKFold
+from sklearn.metrics import accuracy_score, confusion_matrix,roc_curve, roc_auc_score, precision_score, recall_score, precision_recall_curve
+from sklearn.metrics import f1_score
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import classification_report
+
 # Carga de base de datos
 url='https://raw.githubusercontent.com/4GeeksAcademy/logistic-regression-project-tutorial/'+\
     'main/bank-marketing-campaign-data.csv'
